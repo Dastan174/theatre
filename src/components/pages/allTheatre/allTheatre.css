@@ -1,0 +1,9 @@
+#all-theatre {
+  padding-block: 50px;
+  .all-theatre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}

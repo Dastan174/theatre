@@ -1,13 +1,76 @@
-body {
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Inter;
+  /* outline: 1px solid blue; */
+}
+body {
+  color: #222;
+}
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 60px;
+  @media (max-width: 1366px) {
+    max-width: 1200px;
+  }
+  @media (max-width: 1200px) {
+    max-width: 1024px;
+  }
+  @media (max-width: 1024px) {
+    max-width: 768px;
+    padding: 0 40px;
+  }
+  @media (max-width: 768px) {
+    max-width: 640px;
+  }
+  @media (max-width: 640px) {
+    max-width: 475px;
+    padding: 0;
+  }
+  @media (max-width: 475px) {
+    max-width: 350px;
+    padding: 0;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button {
+  background: #488cd4;
+  font-size: 16px;
+  padding: 8px 14px;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+h1 {
+  font-size: clamp(1.5rem, 1.182rem + 1.59vw, 2.375rem); /* 38 */
+  font-weight: 600;
+  color: #488cd4;
+}
+h2 {
+  font-size: clamp(1.313rem, 1.063rem + 1.25vw, 2rem); /* 32 */
+  font-weight: 600;
+}
+h3 {
+  font-size: clamp(1.125rem, 0.898rem + 1.14vw, 1.75rem); /* 28 */
+  font-weight: 500;
+}
+p,
+a {
+  font-size: clamp(0.688rem, 0.574rem + 0.57vw, 1rem);
+  font-weight: 400;
+}
+
+button {
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+button:hover {
+  transform: scale(1.05);
 }

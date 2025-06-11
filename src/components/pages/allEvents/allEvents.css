@@ -1,0 +1,47 @@
+#events {
+  padding-block: 50px;
+  .events {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+    gap: 25px;
+    width: 100%;
+    .card {
+      min-width: 280px;
+      padding: 35px 30px;
+      height: 440px;
+      color: #fff;
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 30px;
+      .card-bg {
+        position: absolute;
+        inset: 0;
+        background-image: url("https://ticket.kg/images/items/img_karmensyuita1695365432.jpg");
+        background-size: cover;
+        background-position: center;
+        filter: blur(10px);
+        z-index: 0;
+      }
+      h4,
+      h3,
+      h2 {
+        position: relative;
+      }
+      h3 {
+        font-size: 36px;
+      }
+      h2 {
+        font-size: 28px;
+      }
+    }
+  }
+  .events::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,0 +1,57 @@
+/* Скрываем иконку по умолчанию */
+.burger-icon {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
+/* Показываем иконку и меню только на маленьких экранах */
+@media (max-width: 768px) {
+  .burger-icon {
+    width: 30px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+  }
+
+  .burger-icon span {
+    height: 4px;
+    background: black;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+  .burger-icon.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .burger-icon.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-icon.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .menu {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    background: #f0f0f0;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 8px;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+}

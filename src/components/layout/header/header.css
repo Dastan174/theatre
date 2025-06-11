@@ -1,0 +1,29 @@
+#header {
+  padding-block: 25px;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    nav {
+      display: flex;
+      gap: 15px;
+      p {
+        color: #222;
+      }
+    }
+    .burger {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #header {
+    .header {
+      nav,
+      button {
+        display: none;
+      }
+    }
+  }
+}

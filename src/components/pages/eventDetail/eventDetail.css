@@ -1,0 +1,104 @@
+#event-detail {
+  padding-block: 40px;
+  .event-detail {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    img {
+      width: 100%;
+      max-height: 700px;
+      border-radius: 30px;
+      object-fit: contain;
+    }
+    .ticket {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px 50px;
+      border: 1px solid black;
+      width: 100%;
+      max-width: 800px;
+      min-height: 300px;
+      border-radius: 15px;
+      .line-tick {
+        height: 100%;
+        width: 1px;
+        background: black;
+      }
+      .line {
+        width: 100%;
+        height: 1px;
+        background: rgba(0, 0, 0, 0.544);
+      }
+      .left-side {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        height: 100%;
+        width: 45%;
+        h4 {
+          font-style: italic;
+          line-height: 31px;
+          span {
+            font-weight: 600;
+            font-size: 27px;
+            color: #488cd4;
+          }
+        }
+      }
+      .right-side {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        height: 100%;
+        width: 45%;
+        h4 {
+          font-style: italic;
+          line-height: 31px;
+          span {
+            font-weight: 600;
+            font-size: clamp(0.688rem, 0.324rem + 1.82vw, 1.688rem);
+            color: #488cd4;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #event-detail {
+    .event-detail {
+      .ticket {
+        .name {
+          h4 {
+            font-size: 16px;
+            span {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #event-detail {
+    .event-detail {
+      .ticket {
+        .line-tick {
+          width: 100%;
+          height: 1px;
+          background: #000;
+        }
+        .name {
+          margin-block: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+#theatre {
+  padding-block: 50px;
+  .theatre {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    .theatre-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      gap: 10px;
+      .line {
+        height: 1px;
+        background: #0000008f;
+        width: 100%;
+      }
+    }
+    .theatre-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      .theatre-card {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+        border-radius: 20px;
+        width: 410px;
+        min-height: 440px;
+        img {
+          max-width: 370px;
+          height: 220px;
+          border-radius: 20px;
+          object-fit: cover;
+        }
+        .theatre-card-title {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: start;
+          gap: 15px;
+          height: 110px;
+          h3 {
+            font-size: clamp(0.688rem, 0.506rem + 0.91vw, 1.188rem);
+            padding-left: 7px;
+            border-left: 5px solid #488cd4;
+          }
+        }
+      }
+    }
+  }
+}
