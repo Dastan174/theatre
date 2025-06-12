@@ -48,3 +48,14 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  #detail {
+    .detail {
+      flex-direction: column;
+      img {
+        align-self: center;
+      }
+    }
+  }
+}

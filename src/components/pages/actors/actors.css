@@ -41,3 +41,26 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  #actors {
+    .actors {
+      .actor-card {
+        max-width: 230px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  #actors {
+    .actors {
+      .actors-list {
+        justify-content: center;
+        .actor-card {
+          max-width: 280px !important;
+        }
+      }
+    }
+  }
+}

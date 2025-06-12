@@ -16,6 +16,7 @@ const AllTheatre = () => {
               city={el.city}
               website={el.website}
               reverse={idx % 2 === 0 ? true : false}
+              image={el.image}
             />
           ))}
         </div>

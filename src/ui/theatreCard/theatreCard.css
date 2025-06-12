@@ -1,4 +1,5 @@
-.theatre-ui {
+.theatre-ui,
+.theatre-phone {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,6 +15,7 @@
     flex-direction: column;
     gap: 20px;
     max-width: 670px;
+    width: 100%;
     line-height: 28px;
     .line {
       height: 1px;
@@ -40,14 +42,11 @@
   }
 }
 
-@media (max-width: 768px) {
-  #theatre-ui {
-    .theatre-ui {
-      flex-direction: column-reverse;
-      .theatre-ui-text {
-        align-items: center;
-        text-align: center;
-      }
-    }
+@media (max-width: 1024px) {
+  .theatre-phone {
+    flex-direction: column !important;
+  }
+  .theatre-ui {
+    flex-direction: column-reverse !important;
   }
 }

@@ -16,10 +16,7 @@ const Theatre = () => {
           <div className="theatre-list">
             {theaters.slice(0, 3).map((el, idx) => (
               <div key={idx} className="theatre-card">
-                <img
-                  src="https://www.baibol.kg/img/attraction_gallery/152413607520645.jpg"
-                  alt=""
-                />
+                <img src={el.image} alt="" />
                 <div className="theatre-card-title">
                   <h3>{el.name}</h3>
                   <h4>{el.type}</h4>

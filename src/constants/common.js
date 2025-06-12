@@ -140,6 +140,8 @@ export const theaters = [
     address: "Бишкек шаары, Абдымомунов көчөсү, 230",
     type: "Драма театры",
     website: "https://dram-teatr.kg",
+    image:
+      "https://sputnik.kg/img/104578/13/1045781305_468:477:3260:2048_640x0_80_0_0_dc06815c3d33af47291aac1cef10f50a.jpg",
   },
   {
     id: 2,
@@ -148,6 +150,8 @@ export const theaters = [
     address: "Бишкек шаары, Тоголок Молдо көчөсү, 17",
     type: "Өзбек драма театры",
     website: "http://teatr-babur.kg",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlADKaFuc0zy8XVumflHz6O8FdmFG6W-Pw2w&s",
   },
   {
     id: 3,
@@ -156,6 +160,8 @@ export const theaters = [
     address: "Ош шаары, Ленин көчөсү, 100",
     type: "Драма театры",
     website: "https://oshdrama.kg",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLpUdUI5GRdC_9qxA-8MmdyidNCpsPl8dhlQ&s",
   },
   {
     id: 4,
@@ -164,6 +170,8 @@ export const theaters = [
     address: "Ош шаары, Масалиев көчөсү, 45",
     type: "Куурчак театры",
     website: "",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOsq9Xf2QIUypylX7nafjyHHZkXWcrHostkg&s",
   },
   {
     id: 5,
@@ -172,6 +180,7 @@ export const theaters = [
     address: "Бишкек шаары, Киев көчөсү, 107",
     type: "Куурчак театры",
     website: "",
+    image: "https://kg.archive.kabar.kg/site/assets/files/32290/7.jpg",
   },
   {
     id: 6,
@@ -180,6 +189,7 @@ export const theaters = [
     address: "Токмок шаары, Театр көчөсү, 12",
     type: "Драма театры",
     website: "",
+    image: null,
   },
   {
     id: 7,
@@ -188,6 +198,8 @@ export const theaters = [
     address: "Каракол шаары, Абдрахманов көчөсү, 34",
     type: "Музыкалуу драма театры",
     website: "",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIUh7TAaRMs8v8r9UTZgrcTwn-WALvZTxFxw&s",
   },
   {
     id: 8,
@@ -196,6 +208,8 @@ export const theaters = [
     address: "Нарын шаары, Ленин көчөсү, 3",
     type: "Музыкалуу драма театры",
     website: "",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRHJJyoV4o1Rk-lzfue8qBIkkntLzCuZT_DA&s",
   },
   {
     id: 9,
